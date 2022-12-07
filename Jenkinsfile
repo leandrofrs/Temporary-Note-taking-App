@@ -1,4 +1,7 @@
 pipeline {
+  tools {
+    jdk 'openjdk-11'
+  }
   agent {
     kubernetes {
       yaml '''
